@@ -18,7 +18,7 @@ const UserDataSchema = new mongoose.Schema({
     required: true
   },
   investment: {
-    type: Number,
+    type: String,
     required: true
   },
   message: {
