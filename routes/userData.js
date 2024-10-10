@@ -13,7 +13,7 @@ router.post(
     check('email', 'Please include a valid email').isEmail(),
     check('phone', 'Phone number is required').not().isEmpty(),
     check('segment', 'Segment is required').not().isEmpty(),
-    check('investment', 'Investment must be a number').isNumeric(),
+    check('investment', 'Investment must be a number').not().isEmpty(),
     check('message', 'Message is required').not().isEmpty()
   ],
   async (req, res) => {
